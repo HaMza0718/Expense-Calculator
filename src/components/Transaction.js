@@ -4,7 +4,7 @@ import { GlobalContext } from '../context/Global';
 
 const Transaction = () => {
     const [text, setText] = useState('');
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState('');
     const {addTransaction} = useContext(GlobalContext);
 
     const submit= e =>{
@@ -27,7 +27,7 @@ const Transaction = () => {
           placeholder="Enter text..." />
         </div>
         <div className="form-control">
-          <label>Amount: (➕ for income, ➖ for expense)</label>
+          <label>Amount: (use ➖ for expense)</label>
           <input type="number" value={amount} 
           onChange={(e) => setAmount(e.target.value)}
           placeholder="Enter amount..." />

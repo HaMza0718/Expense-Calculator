@@ -1,4 +1,4 @@
-export default ({ state, action }) => {
+const func = (state, action ) => {
     switch(action.type){
         case 'delete_transaction':
             return{
@@ -9,7 +9,6 @@ export default ({ state, action }) => {
             return {
                 ...state, transactions: [action.payload, ...state.transactions]
             }
-        default:
-        return state;
     }
 }
+export default func;
