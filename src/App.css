@@ -109,7 +109,7 @@ input[type="number"] {
   background-color: #42c2ff;
   box-shadow: 0 0 5px #42c2ff, 0 0 10px #42c2ff, 0 0 20px #42c2ff,
     0 0 20px #42c2ff;
-  color: #fff;
+  color: white;
 }
 
 .btn:focus,
